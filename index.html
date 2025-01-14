@@ -15,7 +15,6 @@
   />
 
   <style>
-    /* --- Global Resets & Styles --- */
     * {
       margin: 0;
       padding: 0;
@@ -36,12 +35,12 @@
       color: #1d4f75;
     }
 
-    /* --- Header Section --- */
     header {
       background: linear-gradient(135deg, #ebf8ff 0%, #e1ebfc 100%);
       padding: 2rem 1rem;
       border-bottom: 1px solid #ddd;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      text-align: center;
     }
     .header-container {
       max-width: 1200px;
@@ -57,22 +56,31 @@
     .contact-info {
       font-size: 0.95rem;
       color: #555;
+      margin-bottom: 1rem;
+    }
+
+    .profile-photo {
+      width: 160px; 
+      height: auto;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
       margin-bottom: 1.5rem;
     }
 
-    /* --- Navigation --- */
     nav ul {
       list-style: none;
       display: flex;
+      justify-content: center;
       flex-wrap: wrap;
       gap: 1.5rem;
+      margin-bottom: 1rem;
     }
     nav li {
       font-weight: 500;
       font-size: 0.95rem;
     }
 
-    /* --- Section Layout --- */
     section {
       max-width: 1000px;
       margin: 2rem auto;
@@ -95,7 +103,6 @@
       margin-top: 8px;
     }
 
-    /* --- Highlights Text --- */
     .highlight-text {
       margin: 1rem 0;
       text-align: justify;
@@ -105,7 +112,6 @@
       margin-bottom: 1rem;
     }
 
-    /* --- Skills Section --- */
     .skills-list {
       display: grid;
       grid-template-columns: 1fr;
@@ -122,7 +128,6 @@
       }
     }
 
-    /* --- Timeline (Education & Experience) --- */
     .timeline {
       margin-top: 1rem;
     }
@@ -163,7 +168,6 @@
       margin-bottom: 0.5rem;
     }
 
-    /* --- Achievements List --- */
     #achievements ul {
       list-style-type: disc;
       margin-left: 1.5rem;
@@ -174,7 +178,6 @@
       margin-bottom: 0.5rem;
     }
 
-    /* --- Footer --- */
     footer {
       background: #fafafa;
       border-top: 1px solid #ddd;
@@ -198,9 +201,11 @@
   </style>
 </head>
 <body>
-  <!-- HEADER -->
   <header>
     <div class="header-container">
+      <!-- Profile Photo -->
+      <img src="profile.jpg" alt="Photo of Shenggang Ding" class="profile-photo" />
+
       <div class="name">SHENGGANG DING</div>
       <div class="contact-info">
         1230 W 36th Street, Los Angeles, CA | 213-913-0327 |
@@ -221,7 +226,6 @@
     </div>
   </header>
 
-  <!-- HIGHLIGHTS SECTION -->
   <section id="highlights">
     <h2>Highlights</h2>
     <div class="highlight-text">
@@ -244,7 +248,6 @@
     </div>
   </section>
 
-  <!-- SKILLS SECTION -->
   <section id="skills">
     <h2>Skills</h2>
     <div class="skills-list">
@@ -263,7 +266,6 @@
     </div>
   </section>
 
-  <!-- EDUCATION SECTION -->
   <section id="education">
     <h2>Education</h2>
     <div class="timeline">
@@ -306,7 +308,6 @@
     </div>
   </section>
 
-  <!-- EXPERIENCE SECTION -->
   <section id="experience">
     <h2>Experience</h2>
     <div class="timeline">
@@ -357,7 +358,6 @@
     </div>
   </section>
 
-  <!-- KEY ACHIEVEMENTS SECTION -->
   <section id="achievements">
     <h2>Key Achievements</h2>
     <ul>
@@ -371,7 +371,6 @@
     </ul>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     &copy; <span id="year"></span> Shenggang Ding &nbsp;|&nbsp; 
     <a href="mailto:shenggan@usc.edu">Contact Me</a>
