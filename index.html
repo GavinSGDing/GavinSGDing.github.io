@@ -1,11 +1,315 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Welcome to My GitHub Pages Site!</title>
+  <meta name="description" content="Personal website for Shenggang Ding" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shenggang Ding</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", sans-serif;
+    }
+
+    body {
+      background-color: #fdfdfd;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
+    header {
+      background-color: #fefefe;
+      padding: 1.5rem;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .name {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #111;
+    }
+    .contact-info {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    /* Navigation (optional) */
+    nav {
+      margin-top: 1rem;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+    nav li {
+      cursor: pointer;
+    }
+
+    /* Sections */
+    section {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section h2 {
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+      font-weight: 600;
+      border-bottom: 2px solid #ddd;
+      display: inline-block;
+      padding-bottom: 0.5rem;
+    }
+    .highlight-text {
+      margin: 1rem 0;
+      text-align: justify;
+      line-height: 1.7;
+    }
+
+    /* Skills Section */
+    .skills-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+    .skills-list li {
+      margin-left: 1.5rem;
+      list-style-type: disc;
+    }
+
+    /* Education & Experience */
+    .timeline {
+      margin-top: 1rem;
+    }
+    .timeline-item {
+      margin-bottom: 2rem;
+    }
+    .timeline-item h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #222;
+    }
+    .timeline-item .position {
+      color: #444;
+      font-size: 0.95rem;
+      margin-bottom: 0.3rem;
+    }
+    .timeline-item .date-location {
+      font-size: 0.85rem;
+      color: #777;
+      margin-bottom: 0.5rem;
+    }
+    .timeline-item ul {
+      margin-left: 1.5rem;
+      list-style: disc;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #fefefe;
+      border-top: 1px solid #e0e0e0;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    footer a {
+      color: #666;
+    }
+    footer a:hover {
+      text-decoration: none;
+      color: #333;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <p>This is my personal website hosted on GitHub Pages.</p>
+  <!-- HEADER -->
+  <header>
+    <div class="header-container">
+      <div class="name">SHENGGANG DING</div>
+      <div class="contact-info">
+        1230 W 36th Street, Los Angeles, CA | 213-913-0327 |
+        <a href="mailto:shenggan@usc.edu">shenggan@usc.edu</a> |
+        <a href="https://www.linkedin.com/in/shenggang-ding/" target="_blank">LinkedIn</a>
+      </div>
+
+      <!-- Optional: Simple Navigation (links scroll to sections) -->
+      <nav>
+        <ul>
+          <li><a href="#highlights">Highlights</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#achievements">Key Achievements</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HIGHLIGHTS SECTION -->
+  <section id="highlights">
+    <h2>Highlights</h2>
+    <div class="highlight-text">
+      <p>
+        Passionate and motivated Presidential Scholar at the University of Southern California 
+        pursuing a degree in Computer Science and Applied Mathematics, seeking opportunities 
+        to apply a strong foundation in machine learning and data analysis gained through 
+        academic coursework to solve real-world problems.
+      </p>
+      <p>
+        Proficient in supervised and unsupervised learning techniques, neural networks, and 
+        deep learning architectures, with hands-on experience using TensorFlow and PyTorch 
+        frameworks.
+      </p>
+      <p>
+        Experienced in data preprocessing, feature engineering, and model evaluation, as well 
+        as designing and optimizing complex database architectures with proficiency in SQL, 
+        NoSQL, data modeling, and database administration.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <ul>
+        <li><strong>Programming Languages:</strong> Python (Numpy, Pandas, TensorFlow, PyTorch, Matplotlib, Scikit-Learn), C++, Java, JavaScript, HTML/CSS, SQL (MySQL), MongoDB, Matlab</li>
+      </ul>
+      <ul>
+        <li><strong>Technical:</strong> Machine Learning Models (Linear Regression, Logistic Regression, K-Means, Random Forests, KNN, RNN, GRU, LSTM), Cross Validation, Data Analytics, Quantitative Analysis</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- EDUCATION SECTION -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>University of Southern California</h3>
+        <div class="position">Bachelor of Science (BS), Computer Science</div>
+        <div class="date-location">August 2023 – May 2027</div>
+        <ul>
+          <li>Major in Computer Science</li>
+          <li>Relevant coursework: Data Structures, Algorithms, Artificial Intelligence, Machine Learning, Computer & Operating Systems</li>
+          <li>Cumulative GPA: 3.87</li>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <h3>University of Southern California</h3>
+        <div class="position">Bachelor of Science (BS), Applied and Computational Mathematics</div>
+        <div class="date-location">August 2023 – May 2027</div>
+        <ul>
+          <li>Major in Applied and Computational Mathematics</li>
+          <li>Relevant coursework: Calculus, Linear Algebra, Probability and Statistics, Optimization, Mathematics of Machine Learning</li>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <h3>University of Southern California</h3>
+        <div class="position">Bachelor of Science (BS), Quantitative Biology</div>
+        <div class="date-location">August 2023 – May 2027</div>
+        <ul>
+          <li>Major in Quantitative Biology</li>
+          <li>Relevant coursework: Computational Biology</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE SECTION -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Algorithm Developer Intern, Department of Research and Innovation</h3>
+        <div class="position">Transwarp, Xuhui District, Shanghai, China | On-site</div>
+        <div class="date-location">June 2024 – August 2024</div>
+        <ul>
+          <li>
+            Initiated and designed several machine learning models for end-to-end 
+            stock price trend estimation in the Chinese stock market; prompted models’ 
+            information coefficients (IC) between estimated and real values larger than 0.2
+          </li>
+          <li>
+            Developed an algorithmic model integrating genetic algorithms with machine learning 
+            to generate financial factors based on existing factors, deriving hundreds of 
+            high-quality factors
+          </li>
+          <li>
+            Completed implementation of code for more than 100 known high-frequency alpha factors, 
+            contributing to factor pool and evaluated performances of factors
+          </li>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <h3>Software Engineer Intern, Department of Research and Development</h3>
+        <div class="position">Kingdee Software, Qinhuai District, Nanjing, China | Remote</div>
+        <div class="date-location">April 2024 – May 2024</div>
+        <ul>
+          <li>
+            Optimized cloud environments for performance, security, and cost-efficiency 
+            by autoscaling and resource reallocation, improving overall efficiency by 30%
+          </li>
+          <li>
+            Fine-tuned cloud-based ERP systems, enhancing digital management capabilities 
+            for enterprise clients across various sectors and improving user experiences
+          </li>
+          <li>
+            Communicated with customers weekly to identify needs and worked with internal 
+            teams to develop tailored solutions meeting requirements
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEY ACHIEVEMENTS SECTION -->
+  <section id="achievements">
+    <h2>Key Achievements</h2>
+    <ul style="margin-left: 1.5rem; list-style: disc;">
+      <li>Scholarship: Presidential Scholar (half-ride) at the University of Southern California, Academic Achievement Award for Fall 2024</li>
+      <li>Honors: Dean's Scholar, Dean's List Fall 2023, Dean's List Spring 2024, Dean's List Fall 2024</li>
+    </ul>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; <span id="year"></span> Shenggang Ding &nbsp;|&nbsp; 
+    <a href="mailto:shenggan@usc.edu">Contact Me</a>
+  </footer>
+
+  <!-- Simple JavaScript to update the footer year automatically -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
